@@ -1,0 +1,48 @@
+{
+    "name": "procject-dev",
+    "dockerComposeFile": [
+        "../docker-compose.yml"
+    ],
+    "service": "react-app",
+    "workspaceFolder": "/app",
+    "customizations": {
+        "vscode": {
+            "extensions": [
+                // Prettier - Code formatter
+                "esbenp.prettier-vscode",
+                // ESlint
+                "dbaeumer.vscode-eslint",
+                // ES7+ React/Redux/React-Native snippets
+                "dsznajder.es7-react-js-snippets",
+                // Intelli Code(AIコード補完)
+                "VisualStudioExptTeam.vscodeintellicode",
+                // Path Intellisense(インポートのパス自動補完)
+                "christian-kohler.path-intellisense",
+                // Git Graph
+                "mhutchie.git-graph",
+                // Git History
+                "donjayamanne.githistory",
+                // Indent rainbow
+                "oderwat.indent-rainbow",
+                // Auto rename tag
+                "formulahendry.auto-rename-tag",
+                // vscode icons
+                "vscode-icons-team.vscode-icons",
+                // Json to TS
+                "MariusAlchimavicius.json-to-ts",
+                // Import Cost
+                "wix.vscode-import-cost"
+            ],
+            "settings": {
+                "files.encoding": "utf8",
+                "files.eol": "\n",
+                "editor.defaultFormatter": "esbenp.prettier-vscode",
+                "[javascript]": {
+                    "editor.defaultFormatter": "esbenp.prettier-vscode"
+                }
+            }
+        }
+    },
+    "forwardPorts": [5173],
+    "remoteUser": "node"
+}
