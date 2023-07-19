@@ -2,7 +2,7 @@ version: "3.8"
 
 services:
   react-app:
-    container_name: react-app
+    container_name: react-jsx-app
     build:
       context: .
     tty: true
